@@ -10,6 +10,11 @@
 	--BLACK: #000;
     --RED: #f00;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {    
 	font-family: "Roboto", sans-serif;
 	color: var(--SLATE);
