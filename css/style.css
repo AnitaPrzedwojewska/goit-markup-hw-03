@@ -1,27 +1,36 @@
 :root {
-	--WHITE: #fff;
-	--CLOUD: #f4f4fd;
-	--CORNFLOWER: #e7e9fc;
-	--IRIS: #4d5ae5;
-	--OCEAN: #404bbf;
-	--NAVY-BLUE: #2e2f42;
-	--SLATE: #434455;
-	--LATE-SLATE: #8e8f99;
-	--BLACK: #000;
-    --RED: #f00;
+	--PRIMARY-BRAND: #4d5ae5;
+	--PRESSED-STATE: #404bbf;
+	--DARK: #2e2f42;
+    --SUCCESS: #31d0aa;
+	--TEXT: #434455;
+	--LATE-TEXT: #8e8f99;
+	--ACCENT: #e7e9fc;
+	--LIGHT: #f4f4fd;
+    --MODAL-OVERLAY: #2e2f42; /* 40% */
+	--WHITE-BACKGROUND: #fff;
+    --MODAL-BACKGROUND: #fcfcfc;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
 }
 body {    
 	font-family: "Roboto", sans-serif;
-	color: var(--SLATE);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+	color: var(--TEXT);
     background-color: var(--WHITE);
 }
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0;
+}
 .logo {
-    color: var(--IRIS);
+    color: var(--PRIMARY-BRAND);
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -34,25 +43,29 @@ body {
     text-decoration: none;
 }
 .studio-dark {
-    color: var(--NAVY-BLUE);
+    color: var(--DARK);
 }
 .studio-light {
-    color: var(--CLOUD);
+    color: var(--LIGHT);
 }
 .list {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .menu-item {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE);
+    color: var(--DARK);
 }
 .menu-item:hover,
 .menu-item:focus,
 .menu-item:active {
-    color: var(--OCEAN);
+    color: var(--PRESSED-STATE);
 }
 .address {
     font-style: normal;
@@ -62,17 +75,17 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--SLATE);
+    color: var(--TEXT);
 }
 .address-item:hover,
 .address-item:focus,
 .address-item:active {
-    color: var(--OCEAN);
+    color: var(--PRESSED-STATE);
 }
-.motto {
-    background-color: var(--NAVY-BLUE);;
+.title {
+    background-color: var(--DARK);;
 }
-.motto-txt {
+.title-header {
     text-align: center;
     font-size: 56px;
     font-weight: 700;
@@ -87,66 +100,84 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--WHITE);
-    background-color: var(--IRIS);
+    background-color: var(--PRIMARY-BRAND);
     cursor: pointer;
 }
 .order-btn:hover,
 .order-btn:focus,
 .order-btn:active {
-    background-color: var(--OCEAN);
+    background-color: var(--PRESSED-STATE);
 }
 .section-title {
+    margin-bottom: 72px;
     text-align: center; 
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--NAVY-BLUE);
+    color: var(--DARK);
+}
+.none {
+    display: none;
 }
 .section-item-title {
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE);
+    color: var(--DARK);
 }
 .section-item-txt {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--SLATE);
+    color: var(--TEXT);
 }
 .our-team {
-    background-color: var(--CLOUD);
+    background-color: var(--LIGHT);
 }
 .our-team-item {
     background-color: var(--WHITE);
 }
+.filters-list {
+    justify-content: center;
+    margin-bottom: 72px;
+}
 .filters-btn {
+    padding: 12px 24px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--IRIS);
-    background-color: var(--CLOUD);
+    color: var(--PRIMARY-BRAND);
+    background-color: var(--LIGHT);
     cursor: pointer;
 }
 .filters-btn:hover,
 .filters-btn:focus,
 .filters-btn:active {
     color: var(--WHITE);
-    background-color: var(--OCEAN);
+    background-color: var(--PRESSED-STATE);
 }
 .footer {
-    background-color: var(--NAVY-BLUE);
+    background-color: var(--DARK);
+    padding: 100px 0;
 }
 .footer-txt {
-    color: var(--CLOUD, #F4F4FD);
+    color: var(--LIGHT, #F4F4FD);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
+}
+.container {
+    max-width: 1158px;
+    margin: auto;
+}
+.section {
+    padding: 120px 0;
 }
