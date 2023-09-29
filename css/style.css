@@ -23,6 +23,13 @@ body {
 	color: var(--TEXT);
     background-color: var(--WHITE);
 }
+.container {
+    max-width: 1158px;
+    margin: auto;
+}
+.section {
+    padding: 120px 0;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -51,9 +58,11 @@ body {
 .list {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+}
+.wrap {
+    flex-wrap: wrap;
 }
 .menu-item {
     font-size: 16px;
@@ -129,6 +138,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--DARK);
 }
+.section-item-img {
+    display: block;
+}
 .section-item-txt {
     font-size: 16px;
     font-weight: 400;
@@ -136,11 +148,24 @@ body {
     letter-spacing: 0.02em;
     color: var(--TEXT);
 }
+.img-border {
+    border: 1px solid var(--ACCENT);
+}
+.we-do {
+    padding-top: 0;
+}
 .our-team {
     background-color: var(--LIGHT);
 }
 .our-team-item {
-    background-color: var(--WHITE);
+    background-color: var(--WHITE-BACKGROUND);
+    text-align: center;
+}
+.img-caption {
+    padding: 32px 16px;
+}
+.border {
+    border: 1px solid var(--ACCENT);
 }
 .filters-list {
     justify-content: center;
@@ -173,11 +198,4 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-}
-.container {
-    max-width: 1158px;
-    margin: auto;
-}
-.section {
-    padding: 120px 0;
 }
