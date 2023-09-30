@@ -8,6 +8,7 @@
 	--ACCENT: #e7e9fc;
 	--LIGHT: #f4f4fd;
     --MODAL-OVERLAY: #2e2f42; /* 40% */
+    --WHITE: #fff;
 	--WHITE-BACKGROUND: #fff;
     --MODAL-BACKGROUND: #fcfcfc;
 }
@@ -35,6 +36,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 24px 0;
+}
+.border-header {
+    border-bottom: 1px solid var(--ACCENT);
 }
 .logo {
     color: var(--PRIMARY-BRAND);
@@ -92,10 +96,11 @@ body {
     color: var(--PRESSED-STATE);
 }
 .title {
-    background-color: var(--DARK);;
+    background-color: var(--DARK);
+    text-align: center;
 }
 .title-header {
-    text-align: center;
+    margin-bottom: 48px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -103,6 +108,8 @@ body {
     color: var(--WHITE);
 }
 .order-btn {
+    padding: 16px 32px;
+    border: none;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
