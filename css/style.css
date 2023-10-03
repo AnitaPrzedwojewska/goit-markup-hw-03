@@ -27,6 +27,7 @@ body {
 img {
     display: block;
 }
+/* ------------------------------------------------------------- COMMON */
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -46,7 +47,8 @@ img {
     color: var(--DARK);
 }
 .section-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .list {
     list-style-type: none;
@@ -54,9 +56,6 @@ img {
 }
 .wrap {
     flex-wrap: wrap;
-}
-.list-header {
-    gap: 40px; 
 }
 .link {
     text-decoration: none;
@@ -104,11 +103,14 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 24px 0;
 }
 .menu {
     display: flex;
     align-items: center;
+    padding: 24px 0;
+}
+.list-header {
+    gap: 40px; 
 }
 .logo {
     color: var(--PRIMARY-BRAND);
@@ -128,7 +130,6 @@ img {
     color: var(--DARK);
 }
 .item-menu {
-    padding: 24px 0;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -190,14 +191,16 @@ img {
 .section.our-team {
     background-color: var(--LIGHT);
 }
-.caption-our-team {
-    padding: 32px 16px;
-    text-align: center;
+.item-our-team {
     background-color: var(--WHITE-BACKGROUND);
     border-radius: 0px 0px 4px 4px;
 }
+.caption-our-team {
+    padding: 32px 16px;
+    text-align: center;
+}
 /* ------------------------------------------------------------- PORTFOLIO */
-.section-portfolio {
+.section.portfolio {
     padding: 96px 0 120px 0;
 }
 .caption-portfolio {
@@ -240,7 +243,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
-
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
