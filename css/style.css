@@ -27,39 +27,84 @@ body {
 img {
     display: block;
 }
-.img-border {
-    border: 1px solid var(--ACCENT);
-}
 .container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.section {
+    padding: 120px 0;
+}
+.section-title {
+    margin-bottom: 72px;
+    text-align: center; 
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--DARK);
+}
+.section-list {
+    gap: 24px;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.list-header {
+    gap: 40px; 
+}
+.link {
+    text-decoration: none;
+}
+.item:hover,
+.item:focus,
+.item:active {
+    color: var(--PRESSED-STATE);
+}
+.item-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--DARK);
+}
+.item-txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--TEXT);
+}
+.btn {
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px; 
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: var(--WHITE);
+    background-color: var(--PRESSED-STATE);
+}
+/* ------------------------------------------------------------- HEADER */
+.header-top {
+    border-bottom: 1px solid var(--ACCENT);
 }
 .container-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 24px 0;
-}
-.section {
-    padding: 120px 0;
-}
-.section.motto {
-    padding: 188px 0;
-    background-color: var(--DARK);
-    text-align: center;
-}
-.section.we-do {
-    padding-top: 0;
-}
-.section.our-team {
-    background-color: var(--LIGHT);
-}
-.section-portfolio {
-    padding: 96px 0 120px 0;
-}
-.header-top-border {
-    border-bottom: 1px solid var(--ACCENT);
 }
 .menu {
     display: flex;
@@ -79,82 +124,8 @@ img {
     display: block;
     margin-right: 76px;
 }
-.logo-footer {
-    display: inline-block;
-    margin-bottom: 16px;
-}
 .studio-dark {
     color: var(--DARK);
-}
-.studio-light {
-    color: var(--LIGHT);
-}
-.link {
-    text-decoration: none;
-}
-.title-motto {
-    max-width: 496px;
-    margin-right: auto;
-    margin-bottom: 48px;
-    margin-left: auto;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
-    color: var(--WHITE);
-}
-.title-section {
-    margin-bottom: 72px;
-    text-align: center; 
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--DARK);
-}
-.title-item {
-    margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--DARK);
-}
-.txt-item {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--TEXT);
-}
-.caption-our-team {
-    padding: 32px 16px;
-    text-align: center;
-    background-color: var(--WHITE-BACKGROUND);
-    border-radius: 0px 0px 4px 4px;
-}
-.caption-portfolio {
-    padding: 32px 16px;
-    border: 1px solid var(--ACCENT);
-    border-top: 0;
-}
-.list {
-    list-style-type: none;
-    display: flex;
-}
-.list-header {
-    gap: 40px; 
-}
-.list-section {
-    gap: 24px;
-}
-.list-filters {
-    justify-content: center;
-    margin-bottom: 72px;
-}
-.wrap {
-    flex-wrap: wrap;
 }
 .item-menu {
     padding: 24px 0;
@@ -172,27 +143,22 @@ img {
     letter-spacing: 0.02em;
     color: var(--TEXT);
 }
-.item:hover,
-.item:focus,
-.item:active {
-    color: var(--PRESSED-STATE);
+/* ------------------------------------------------------------- MOTTO */
+.section.motto {
+    padding: 188px 0;
+    background-color: var(--DARK);
+    text-align: center;
 }
-.item-our-philosophy,
-.item-our-team {
-    width: calc((100% - 72px) / 4);
-}
-.item-we-do,
-.item-portfolio {
-    width: calc((100% - 48px) / 3);
-}
-.btn {
-    display: block;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border-radius: 4px; 
+.motto-title {
+    max-width: 496px;
+    margin-right: auto;
+    margin-bottom: 48px;
+    margin-left: auto;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    color: var(--WHITE);
 }
 .btn.order {
     min-width: 169px;
@@ -204,6 +170,45 @@ img {
     border: none;
     cursor: pointer;
 }
+/* ------------------------------------------------------------- OUR PHILOSOPHY */
+.item-our-philosophy,
+.item-our-team {
+    width: calc((100% - 72px) / 4);
+}
+/* ------------------------------------------------------------- WE DO */
+.section.we-do {
+    padding-top: 0;
+}
+.img-border {
+    border: 1px solid var(--ACCENT);
+}
+.item-we-do,
+.item-portfolio {
+    width: calc((100% - 48px) / 3);
+}
+/* ------------------------------------------------------------- OUR TEAM */
+.section.our-team {
+    background-color: var(--LIGHT);
+}
+.caption-our-team {
+    padding: 32px 16px;
+    text-align: center;
+    background-color: var(--WHITE-BACKGROUND);
+    border-radius: 0px 0px 4px 4px;
+}
+/* ------------------------------------------------------------- PORTFOLIO */
+.section-portfolio {
+    padding: 96px 0 120px 0;
+}
+.caption-portfolio {
+    padding: 32px 16px;
+    border: 1px solid var(--ACCENT);
+    border-top: 0;
+}
+.list-filters {
+    justify-content: center;
+    margin-bottom: 72px;
+}
 .btn.filters {
     padding: 12px 24px;
     color: var(--PRIMARY-BRAND);
@@ -211,20 +216,22 @@ img {
     border: 1px solid var(--ACCENT);
     cursor: pointer;
 }
-.btn:hover,
-.btn:focus,
-.btn:active {
-    color: var(--WHITE);
-    background-color: var(--PRESSED-STATE);
-}
 .btn.filters:hover,
 .btn.filters:focus,
 .btn.filters:active {
     border: 1px solid transparent;
 }
+/* ------------------------------------------------------------- FOOTER */
 .footer {
     background-color: var(--DARK);
     padding: 100px 0;
+}
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.studio-light {
+    color: var(--LIGHT);
 }
 .footer-txt {
     color: var(--LIGHT);
@@ -234,12 +241,13 @@ img {
     letter-spacing: 0.32px;
 }
 
+
 .visually-hidden:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  position: absolute;
+  width: 1px;
   height: 1px;
   overflow: hidden;
-  position: absolute;
   white-space: nowrap;
-  width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }

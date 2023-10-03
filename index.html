@@ -6,15 +6,16 @@
     <!-- arkusz normalizacyjny arkusze stylów różnych przeglądarek: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <title>Main Page</title>
 </head>
 <body>
-    <header class="header-top-border"><!------------------------------ HEADER -->
+    <!-- ---------------------------- HEADER -->
+    <header class="header-top">
         <div class="container container-header">
             <nav class="menu">
                 <a class="link logo logo-header" href="./index.html">Web<span class="studio-dark">Studio</span></a>
@@ -33,42 +34,43 @@
         </div>
     </header>
     <main>
-        <section class="section motto"> <!------------------------------ MOTTO -->
+        <!-- ---------------------------- MOTTO -->
+        <section class="section motto"> 
             <div class="container">
-                <h1 class="title-motto">Effective Solutions<br />for Your Business</h1>
+                <h1 class="motto-title">Effective Solutions<br>for Your Business</h1>
                 <button class="btn order" type="button">Order Service</button>
             </div>
         </section>
-
-        <section class="section our-philosophy"><!------------------------------ PHILOSOPHY -->
+        <!-- ---------------------------- PHILOSOPHY -->
+        <section class="section our-philosophy">
             <div class="container">
-                <h2 class="visually-hidden" :not=" "></h2>Our Philosphy</h2>
-                <ul class="list list-section">
+                <h2 class="visually-hidden">Our Philosphy</h2>
+                <ul class="list section-list">
                     <li class="item-our-philosophy">
-                        <h3 class="title-item">Strategy</h3>
-                        <p class="txt-item">Our goal is to identify the business
+                        <h3 class="item-title">Strategy</h3>
+                        <p class="item-txt">Our goal is to identify the business
                         problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="item-our-philosophy">
-                        <h3 class="title-item">Punctuality</h3>
-                        <p class="txt-item">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                        <h3 class="item-title">Punctuality</h3>
+                        <p class="item-txt">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
                     <li class="item-our-philosophy">
-                        <h3 class="title-item">Diligence</h3>
-                        <p class="txt-item">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                        <h3 class="item-title">Diligence</h3>
+                        <p class="item-txt">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
                     <li class="item-our-philosophy">
-                        <h3 class="title-item">Technologies</h3>
-                        <p class="txt-item">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                        <h3 class="item-title">Technologies</h3>
+                        <p class="item-txt">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
                 </ul>
             </div>
         </section>
-
-        <section class="section we-do"><!------------------------------ WE DO -->
+        <!-- ---------------------------- WE DO -->
+        <section class="section we-do">
             <div class="container">
-                <h2 class="title-section">What are we doing</h2>
-                <ul class="list list-section wrap">
+                <h2 class="section-title">What are we doing</h2>
+                <ul class="list section-list wrap">
                     <li class="item-we-do">
                         <img class="img-border" 
                             src="./images/we-do-img1.jpg" 
@@ -90,18 +92,18 @@
                 </ul>
             </div>
         </section>
-
-        <section class="section our-team"><!------------------------------ OUR TEAM -->
+        <!-- ---------------------------- OUR TEAM -->
+        <section class="section our-team">
             <div class="container">
-                <h2 class="title-section">Our Team</h2>
-                <ul class="list list-section wrap">
+                <h2 class="section-title">Our Team</h2>
+                <ul class="list section-list wrap">
                     <li class="item-our-team">
                         <img src="./images/our-team-mark-guerrero.jpg"
                             alt="Photo Mark Guerrero: smiling man in a blue shirt, brown hair and very short stubble" 
                             width="264" height="260">
                         <div class="caption-our-team">
-                            <h3 class="title-item">Mark Guerrero</h3>
-                            <p class="txt-item">Product Designer</p>
+                            <h3 class="item-title">Mark Guerrero</h3>
+                            <p class="item-txt">Product Designer</p>
                         </div>
                     </li>
                     <li class="item-our-team">
@@ -109,8 +111,8 @@
                             alt="Photo Tom Ford: laughing man in a blue shirt, short dark hair and short stubble" 
                             width="264" height="260">
                         <div class="caption-our-team">
-                            <h3 class="title-item">Tom Ford</h3>
-                            <p class="txt-item">Frontend Developer</p>
+                            <h3 class="item-title">Tom Ford</h3>
+                            <p class="item-txt">Frontend Developer</p>
                         </div>
                     </li>
                     <li class="item-our-team">
@@ -118,8 +120,8 @@
                             alt="Photo Camila Garcia: smiling woman in pink sweater and long straight dark brown hair"
                             width="264" height="260">
                         <div class="caption-our-team">
-                            <h3 class="title-item">Camila Garcia</h3>
-                            <p class="txt-item">Marketing</p>
+                            <h3 class="item-title">Camila Garcia</h3>
+                            <p class="item-txt">Marketing</p>
                         </div>
                     </li>
                     <li class="item-our-team">
@@ -127,18 +129,19 @@
                             alt="Photo Daniel Wilson: smiling man in a gray blouse with thick brown hair and fine stubble"
                             width="264" height="260">
                         <div class="caption-our-team">
-                            <h3 class="title-item">Daniel Wilson</h3>
-                            <p class="txt-item">UI Designer</p>
+                            <h3 class="item-title">Daniel Wilson</h3>
+                            <p class="item-txt">UI Designer</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer class="footer"><!------------------------------ FOOTER -->
+    <!-- ---------------------------- FOOTER -->
+    <footer class="footer">
         <div class="container">
             <a class="logo logo-footer link" href="./index.html">Web<span class="studio-light">Studio</span></a>
-            <p class="footer-txt">Increase the flow of customers and<br />sales for your business with digital<br />marketing & growth solutions.</p>
+            <p class="footer-txt">Increase the flow of customers and<br>sales for your business with digital<br>marketing & growth solutions.</p>
         </div>
     </footer>
 </body>
