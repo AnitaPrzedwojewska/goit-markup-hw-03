@@ -91,6 +91,18 @@ img {
     color: var(--WHITE);
     background-color: var(--PRESSED-STATE);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ------------------------------------------------------------- HEADER */
 .header-top {
     border-bottom: 1px solid var(--ACCENT);
@@ -214,6 +226,7 @@ img {
     border-top: 0;
 }
 .list-filters {
+    column-gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
 }
@@ -251,14 +264,4 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
 }
