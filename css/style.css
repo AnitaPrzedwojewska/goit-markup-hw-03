@@ -7,10 +7,12 @@
 	--LATE-TEXT: #8e8f99;
 	--ACCENT: #e7e9fc;
 	--LIGHT: #f4f4fd;
-    --MODAL-OVERLAY: #2e2f42; /* 40% */
     --WHITE: #fff;
-	--WHITE-BACKGROUND: #fff;
-    --MODAL-BACKGROUND: #fcfcfc;
+
+    --GAP-BASIC: 24px;
+    --GAP-HEADER: 40px;
+    --WIDTH-THREE: calc((100% - 2*var(--GAP-BASIC)) / 3);
+    --WIDTH-FOUR: calc((100% - 3*var(--GAP-BASIC)) / 4);
 }
 * {
   margin: 0;
@@ -27,7 +29,7 @@ body {
 img {
     display: block;
 }
-/* ------------------------------------------------------------- COMMON */
+/* ---------------------------- COMMON */
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -103,7 +105,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* ------------------------------------------------------------- HEADER */
+/* ---------------------------- HEADER */
 .header-top {
     border-bottom: 1px solid var(--ACCENT);
 }
@@ -117,7 +119,7 @@ img {
     align-items: center;
 }
 .list-header {
-    gap: 40px; 
+    gap: var(--GAP-HEADER); 
 }
 .logo {
     color: var(--PRIMARY-BRAND);
@@ -152,7 +154,7 @@ img {
     font-weight: 400;
     color: var(--TEXT);
 }
-/* ------------------------------------------------------------- MOTTO */
+/* ---------------------------- MOTTO */
 .section.motto {
     padding: 188px 0;
     background-color: var(--DARK);
@@ -179,60 +181,50 @@ img {
     border: none;
     cursor: pointer;
 }
-/* ------------------------------------------------------------- OUR PHILOSOPHY */
+/* ---------------------------- OUR PHILOSOPHY */
 .list-our-philosophy {
-    gap: 24px;
+    gap: var(--GAP-BASIC);
 }
-.item-our-philosophy,
-.item-our-team {
-    width: calc((100% - 72px) / 4);
+.item-our-philosophy {
+    width: var(--WIDTH-FOUR);
 }
-/* ------------------------------------------------------------- WE DO */
+/* ---------------------------- WE DO */
 .section.we-do {
     padding-top: 0;
 }
 .list-we-do {
-    gap: 24px;
+    gap: var(--GAP-BASIC);
 }
 .img-border {
     border: 1px solid var(--ACCENT);
 }
-.item-we-do,
-.item-portfolio {
-    width: calc((100% - 48px) / 3);
+.item-we-do {
+    width: var(--WIDTH-THREE);
 }
-/* ------------------------------------------------------------- OUR TEAM */
+/* ---------------------------- OUR TEAM */
 .section.our-team {
     background-color: var(--LIGHT);
 }
 .list-our-team {
-    gap: 24px;
+    gap: var(--GAP-BASIC);
 }
 .item-our-team {
-    background-color: var(--WHITE-BACKGROUND);
+    background-color: var(--WHITE);
     border-radius: 0px 0px 4px 4px;
+    width: var(--WIDTH-FOUR);
 }
 .caption-our-team {
     padding: 32px 16px;
     text-align: center;
 }
-/* ------------------------------------------------------------- PORTFOLIO */
+/* ---------------------------- PORTFOLIO */
 .section.portfolio {
     padding: 96px 0 120px 0;
 }
-.caption-portfolio {
-    padding: 32px 16px;
-    border: 1px solid var(--ACCENT);
-    border-top: 0;
-}
 .list-filters {
-    column-gap: 24px;
+    gap: var(--GAP-BASIC);
     justify-content: center;
     margin-bottom: 72px;
-}
-.list-portfolio {
-    column-gap: 24px;
-    row-gap: 48px;
 }
 .btn.filters {
     padding: 12px 24px;
@@ -246,7 +238,19 @@ img {
 .btn.filters:active {
     border: 1px solid transparent;
 }
-/* ------------------------------------------------------------- FOOTER */
+.list-portfolio {
+    column-gap: var(--GAP-BASIC);
+    row-gap: calc(2*var(--GAP-BASIC));
+}
+.item-portfolio {
+    width: var(--WIDTH-THREE);
+}
+.caption-portfolio {
+    padding: 32px 16px;
+    border: 1px solid var(--ACCENT);
+    border-top: 0;
+}
+/* ---------------------------- FOOTER */
 .footer {
     background-color: var(--DARK);
     padding: 100px 0;
