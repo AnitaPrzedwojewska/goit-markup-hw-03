@@ -87,12 +87,6 @@ img {
     letter-spacing: 0.04em;
     border-radius: 4px; 
 }
-.btn:hover,
-.btn:focus,
-.btn:active {
-    color: var(--WHITE);
-    background-color: var(--PRESSED-STATE);
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -181,6 +175,12 @@ img {
     border: none;
     cursor: pointer;
 }
+.btn.order:hover,
+.btn.order:focus,
+.btn.order:active {
+    color: var(--WHITE);
+    background-color: var(--PRESSED-STATE);
+}
 /* ---------------------------- OUR PHILOSOPHY */
 .list-our-philosophy {
     gap: var(--GAP-BASIC);
@@ -236,6 +236,8 @@ img {
 .btn.filters:hover,
 .btn.filters:focus,
 .btn.filters:active {
+    color: var(--WHITE);
+    background-color: var(--PRESSED-STATE);
     border: 1px solid transparent;
 }
 .list-portfolio {
