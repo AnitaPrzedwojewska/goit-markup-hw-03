@@ -214,7 +214,7 @@ img {
     width: var(--WIDTH-FOUR);
 }
 .caption-our-team {
-    padding: 32px 16px;
+    padding: 32px 0;
     text-align: center;
 }
 /* ---------------------------- PORTFOLIO */
